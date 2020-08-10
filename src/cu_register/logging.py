@@ -37,7 +37,7 @@ class IFTTTHandler(Handler):
 key_present = False
 with open("config/ifttt.key") as f:
     ifttt_url = f.read()
-    if ifttt_url.startswith('http://'):
+    if ifttt_url.startswith(('http://', 'https://')):
         key_present = True
 http_handler = IFTTTHandler(ifttt_url, level='ERROR')
 if key_present:

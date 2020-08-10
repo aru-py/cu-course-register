@@ -19,7 +19,7 @@ from .page import TermSelectionPage
 class Colors:
     sandstone = fg('#EFDBB2')
     tangerine = fg('#F56600')
-    brick = fg("#000000")
+    brick = fg("yellow")
     bold = attr('bold')
     blink = attr('blink')
     reset = attr('reset')
