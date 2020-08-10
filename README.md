@@ -1,8 +1,8 @@
 # Cu-Register: Course Registration Tool
 `cu-register` finds when a course becomes open and automatically registers you for it. It interfaces Clemson University's Banner System 
-bu can be modified to work at other universities. 
+but can be modified to work at other universities. 
 <p align="center">
-  <img src="https://github.com/aru-py/cu-register/blob/master/demo.gif" width=80%></img>
+  <img src="https://github.com/aru-py/cu-register/blob/master/github/demo.gif" width=80%></img>
 </p>
 
 ## Features
@@ -23,9 +23,9 @@ bu can be modified to work at other universities.
 5. If a browser opens, the program is running.
 
 ## Settings
-* **Change Scan Frequency:** By default, scans are performed every ten seconds, but this can configured under *global settings* in `driver.py` 
+* **Change Scan Frequency:** By default, scans are performed every minute, but this can configured under *global settings* in `driver.py` 
 * **Enable Headless Mode:** In `driver.py`, Change `HEADLESS_MODE = False` to `HEADLESS_MODE = True` 
-* **Enable Push Notifications:** Create a [IFTTT recipe](https://ifttt.com/) that uses *webhooks* and *push notifications* and add the webhook endpoitn to `data/ifttt.key`
+* **Enable Push Notifications:** Create a [IFTTT recipe](https://ifttt.com/) that uses *webhooks* and *push notifications* and add the webhook endpoint to `config/ifttt.key`
 
 ## License
-This software is released under the **MIT License** and is free to use and distribute. Contributions are greatly appreciated.
+This software is released under the **GNU License** and is free to use and distribute. Contributions are greatly appreciated.
