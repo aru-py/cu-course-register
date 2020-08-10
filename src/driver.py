@@ -49,6 +49,7 @@ with open('config/config.json', 'r+') as f:
         else:
             logger.error("CREDENTIALS FAILED\nEXITING")
             exit(1)
+        # save data to file
         data = jsonpickle.encode([user, courses])
         f.write(data)
 
@@ -62,6 +63,7 @@ errors = 0
 while True:
     try:
         course = check_courses(courses=courses)
+        logger.info("SCANNED")
         if course:
             logger.error(f"COURSE FOUND: {course.subject} {course.course_number}" )
             login(user=user)
