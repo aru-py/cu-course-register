@@ -1,0 +1,6 @@
+requests==2.24.0
+selenium==3.141.0
+prompt_toolkit~=3.0.5
+jsonpickle~=1.4.1
+urllib3~=1.25.10
+colored~=1.4.2
